@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#131417">
+<title>Page not found | Rajveer Megwanshi</title>
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<style>
+*{box-sizing:border-box;margin:0}
+body{min-height:100vh;display:grid;place-items:center;padding:2rem;text-align:center;background:radial-gradient(circle at 20% 15%,rgba(255,106,26,.25),transparent 50%),radial-gradient(circle at 85% 85%,rgba(31,168,255,.22),transparent 50%),#131417;color:#f3f1ee;font:400 1.05rem/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1{font:800 clamp(4rem,16vw,9rem)/1 system-ui,sans-serif;background:linear-gradient(135deg,#ff6a1a,#ffb27a 55%,#1fa8ff);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.04em}
+h2{font-size:clamp(1.4rem,4vw,2rem);margin:.4rem 0 .8rem}
+p{color:#a4a8b1;max-width:38ch;margin:0 auto 2rem}
+a{display:inline-block;padding:.95rem 2rem;border-radius:999px;background:linear-gradient(135deg,#ff7a2e,#ff5a0a);color:#fff;font-weight:600;text-decoration:none;box-shadow:0 10px 30px -10px rgba(255,106,26,.7)}
+</style>
+</head>
+<body>
+<main>
+<h1>404</h1>
+<h2>This page ended up on the cutting-room floor.</h2>
+<p>The page you were looking for does not exist or has moved.</p>
+<a id="home" href="/">Back to the website</a>
+</main>
+<script>
+/* Works on username.github.io/repo-name/ and on a custom domain */
+(function(){var seg=location.pathname.split('/')[1],gh=/\.github\.io$/.test(location.hostname)&&seg&&!/\.html?$/.test(seg),base=gh?'/'+seg+'/':'/';
+document.getElementById('home').href=base;var f=document.querySelector('link[rel=icon]');if(f)f.href=base+'assets/favicon.svg'})();
+</script>
+</body>
+</html>

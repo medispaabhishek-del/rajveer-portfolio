@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#131417">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rajveer Megwanshi">
+<meta property="og:title" content="Rajveer Megwanshi | Video Editor & Content Creator">
+<meta property="og:description" content="Rajveer Megwanshi turns raw footage into stories that hook. 5 years, 300+ videos, 50+ clients.">
+<meta name="twitter:card" content="summary">
+<title>Rajveer Megwanshi | Video Editor & Content Creator</title>
+<meta name="description" content="Rajveer Megwanshi turns raw footage into stories that hook. 5 years, 300+ videos, 50+ clients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="data/site-data.js"></script>
+<script src="js/site.js"></script>
+</head>
+<body>
+
+<div class="bg" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><i class="blob b4"></i></div>
+
+<header class="nav" id="nav">
+  <a class="logo" href="index.html">Rajveer<span>.</span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  <nav class="links" id="links">
+    <a href="index.html" class="on">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a><a href="awards.html">Awards</a>
+    <a href="contact.html" class="btn sm">Hire Me</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero wrap" id="top">
+  <div class="hero-copy">
+    <p class="role" data-t="home.role">Video Editor &amp; Content Creator</p>
+    <h1 data-t="home.name">Rajveer<br>Megwanshi</h1>
+    <p class="tag" data-t="home.tagline">Turning raw footage into stories that hook.</p>
+    <div class="actions">
+      <a class="btn" href="portfolio.html" data-t="home.cta1">View My Work</a>
+      <a class="btn ghost" href="contact.html" data-t="home.cta2">Let's Talk</a>
+    </div>
+  </div>
+  <div class="photo">
+    <div class="frame"><img id="profile-photo" data-img="profile" src="assets/profile-placeholder.svg" alt="Portrait of Rajveer Megwanshi" width="800" height="1000"></div>
+  </div>
+</section>
+
+<section class="stats wrap rv">
+  <div class="stat"><b class="n" data-stat="0" data-to="300" data-suf="+">0</b><span data-t="home.stat1">Videos edited</span></div>
+  <div class="stat"><b class="n" data-stat="1" data-to="50" data-suf="+">0</b><span data-t="home.stat2">Happy clients</span></div>
+  <div class="stat"><b class="n" data-stat="2" data-to="5">0</b><span data-t="home.stat3">Years of experience</span></div>
+  <div class="stat"><b class="n" data-stat="3" data-to="4.9" data-dec="1" data-suf="/5">0</b><span data-t="home.stat4">Average client rating</span></div>
+</section>
+
+<section class="sec wrap" id="services">
+  <div class="head rv"><h2 data-t="home.svc.title">What I do best</h2><p data-t="home.svc.sub">From the first cut to the final export, every frame is built to keep people watching.</p></div>
+  <div class="grid3" data-stagger>
+    <article class="card rv"><svg class="ic"><use href="#i-cut"/></svg><h3 data-t="home.t1.title">Video Editing</h3><p data-t="home.t1.desc">Tight pacing and clean cuts for YouTube, ads and long-form.</p></article>
+    <article class="card rv"><svg class="ic"><use href="#i-reel"/></svg><h3 data-t="home.t2.title">Reels &amp; Shorts</h3><p data-t="home.t2.desc">Vertical edits with hooks built for the first three seconds.</p></article>
+    <article class="card rv"><svg class="ic"><use href="#i-color"/></svg><h3 data-t="home.t3.title">Color Grading</h3><p data-t="home.t3.desc">Cinematic looks that stay consistent across every shot.</p></article>
+    <article class="card rv"><svg class="ic"><use href="#i-motion"/></svg><h3 data-t="home.t4.title">Motion Graphics</h3><p data-t="home.t4.desc">Titles, lower thirds and animated text that match your brand.</p></article>
+    <article class="card rv"><svg class="ic"><use href="#i-sound"/></svg><h3 data-t="home.t5.title">Sound Design</h3><p data-t="home.t5.desc">Clear dialogue, music mixing and effects that add punch.</p></article>
+    <article class="card rv"><svg class="ic"><use href="#i-grow"/></svg><h3 data-t="home.t6.title">Content Strategy</h3><p data-t="home.t6.desc">Thumbnails, titles and story structure that grow your channel.</p></article>
+  </div>
+</section>
+
+<section class="sec wrap" id="work">
+  <div class="head rv"><h2 data-t="home.work.title">Featured work</h2><p data-t="home.work.sub">A few recent edits. Sample projects shown until you add your own.</p></div>
+  <div class="grid3 work" data-stagger id="hwork"></div>
+  <div class="center rv"><a class="btn" href="portfolio.html" data-t="home.work.cta">View Full Portfolio</a></div>
+</section>
+
+<section class="sec wrap" id="reviews">
+  <div class="head rv"><h2 data-t="home.rev.title">What clients say</h2></div>
+  <div class="slider rv" id="slider">
+    <div class="track" id="track"></div>
+    <div class="ctrl"><button id="prev" aria-label="Previous review">&#8249;</button><div class="dots" id="dots"></div><button id="next" aria-label="Next review">&#8250;</button></div>
+  </div>
+</section>
+
+<section class="sec brands rv" aria-label="Brands I have worked with">
+  <p class="lbl" data-t="home.brands.label">Brands I've worked with</p>
+  <div class="mq"><div class="mq-track" id="mq"></div></div>
+</section>
+
+<section class="wrap rv" id="contact-cta">
+  <div class="cta"><h2 data-t="home.cta.title">Have footage that deserves better?</h2><p data-t="home.cta.text">Tell me about your project and I'll reply within one working day.</p><a class="btn" href="contact.html" data-t="home.cta.btn">Start a Project</a></div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap fgrid">
+    <div><a class="logo" href="index.html">Rajveer<span>.</span></a><p data-t="footer.blurb">Video editor and content creator turning raw footage into stories that hook.</p></div>
+    <div><h4>Quick links</h4><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="about.html">About</a><a href="awards.html">Awards</a><a href="contact.html">Contact</a></div>
+    <div><h4>Follow</h4><div class="soc">
+      <a href="#" aria-label="Instagram" data-soc="instagram"><svg class="ic"><use href="#i-ig"/></svg></a>
+      <a href="#" aria-label="YouTube" data-soc="youtube"><svg class="ic"><use href="#i-yt"/></svg></a>
+      <a href="#" aria-label="LinkedIn" data-soc="linkedin"><svg class="ic"><use href="#i-in"/></svg></a>
+      <a href="#" aria-label="X" data-soc="x"><svg class="ic"><use href="#i-x"/></svg></a></div></div>
+  </div>
+  <p class="copy" data-t="footer.copy">&copy; 2026 Rajveer Megwanshi. All rights reserved.</p>
+</footer>
+<script>SITE.render();</script>
+<script src="js/player.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

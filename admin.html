@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#131417">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin Panel | Rajveer Megwanshi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+<script src="data/site-data.js"></script>
+<script src="js/site.js"></script>
+</head>
+<body class="adm">
+<div class="bg" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+
+<section class="login" id="login">
+  <form class="lcard" id="lform" autocomplete="on">
+    <a class="logo" href="index.html">Rajveer<span>.</span></a>
+    <h1>Admin Panel</h1>
+    <p>Sign in to manage your website.</p>
+    <label class="f"><span>Username</span><input id="lu" name="username" autocomplete="username" required autofocus></label>
+    <label class="f"><span>Password</span><input id="lp" name="password" type="password" autocomplete="current-password" required></label>
+    <p class="lerr" id="lerr" role="alert"></p>
+    <button class="btn send" type="submit">Sign In</button>
+    <a class="back" href="index.html">&larr; Back to website</a>
+  </form>
+</section>
+
+<div class="app" id="app" hidden>
+  <aside class="side" id="side">
+    <a class="logo" href="index.html">Rajveer<span>.</span> <small>Admin</small></a>
+    <nav id="nav"></nav>
+    <button class="out" id="logout" type="button">Sign out</button>
+  </aside>
+  <div class="mainwrap">
+    <header class="top">
+      <div class="tleft"><button class="menu" id="menu" type="button" aria-label="Toggle menu">&#9776;</button><b id="ttl">Dashboard</b></div>
+      <div class="tr"><span class="badge" id="badge"></span><span class="dirty" id="dirty" hidden>&#9679; Unsaved changes</span><button class="btn sm" id="save" type="button">Save changes</button></div>
+    </header>
+    <main id="main"></main>
+  </div>
+</div>
+<input type="file" id="filepick" hidden>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="js/admin.js"></script>
+</body>
+</html>
