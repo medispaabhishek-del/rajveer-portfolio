@@ -5,14 +5,24 @@ The entry file is **`index.html`**. It is ready for **GitHub Pages**.
 
 ## Put it online with GitHub Pages (about 5 minutes)
 
-1. Sign in at <https://github.com> and click **New repository**. Name it (for example `portfolio`), keep it **Public**, click **Create repository**.
-2. On the new repository page click **uploading an existing file**.
-3. Unzip this package on your computer. Open the unzipped **website** folder, select **everything inside it** (including the `css`, `js`, `assets`, `data` and `uploads` folders and the hidden `.nojekyll` file) and drag it all into the GitHub page. Click **Commit changes**.
-   - Make sure `index.html` ends up at the top level of the repository, not inside an extra folder.
-4. Open **Settings → Pages**. Under **Build and deployment** set **Source: Deploy from a branch**, **Branch: `main`**, folder **`/ (root)`**, and click **Save**.
-5. Wait one to two minutes. GitHub shows your address at the top of that page, usually `https://YOUR-USERNAME.github.io/portfolio/`. That is your live website.
+> **The one thing that matters:** `index.html` and the folders `css`, `js`, `assets`, `data`, `uploads` must all sit **side by side at the top level of the repository**. If the folders are missing, the site shows plain unstyled text and counters stuck at 0.
+
+1. Sign in at <https://github.com> and click **New repository**. Name it (for example `rajveer-portfolio`), keep it **Public**, click **Create repository**.
+2. Unzip this package on your computer and open the unzipped **rajveer-portfolio** folder. You will see `index.html` and the folders `css`, `js`, `assets`, `data`, `uploads`.
+3. On the new repository page click **uploading an existing file**. **Drag the contents of that folder** (select everything inside it, `Ctrl+A`) into the GitHub page. Drag them. Do **not** use "choose your files", because that button cannot upload folders.
+   - Wait until GitHub lists every file, including the ones inside `css/`, `js/`, `assets/`, `data/` and `uploads/`, then click **Commit changes**.
+   - Do not upload the outer `rajveer-portfolio` folder itself, only what is inside it.
+4. Add the hidden file `.nojekyll`: click **Add file → Create new file**, type `.nojekyll` as the name, and commit (leave it empty). It is also inside the zip, but hidden files are sometimes skipped when dragging.
+5. Open **Settings → Pages**. Under **Build and deployment** set **Source: Deploy from a branch**, **Branch: `main`**, folder **`/ (root)`**, and click **Save**.
+6. Wait one to two minutes, then open your address, for example `https://YOUR-USERNAME.github.io/rajveer-portfolio/`.
+
+**Check it worked:** add `/css/style.css` to the end of your address. You should see lines of code, not "404". If you see 404, the `css` folder is not at the top level of the repository (open the repository's file list and compare it with step 2).
 
 Want your own domain? In **Settings → Pages → Custom domain** enter it and follow GitHub's DNS instructions. Nothing in the site needs changing.
+
+### If the live site looks like plain unstyled text
+* A red bar at the bottom of the page names the missing file. It means that folder was not uploaded to the top level of the repository. Upload the missing folder (drag it into the repository page via **Add file → Upload files**) and commit.
+* Hard-refresh with `Ctrl+Shift+R` after fixing, because browsers and GitHub cache files for a few minutes.
 
 ## Files
 
